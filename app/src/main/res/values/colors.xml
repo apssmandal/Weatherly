@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#64c9fd</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="DayStart">#64c9fd</color>
+    <color name="DayEnd">#a6ddf7</color>
+    <color name="EveningStart">#d06184</color>
+    <color name="EveningEnd">#fedf63</color>
+    <color name="NightStart">#451e95</color>
+    <color name="NightEnd">#c163c0</color>
+    <color name="MorningStart">#29d2a9</color>
+    <color name="MorningEnd">#c6f3ab</color>
+    <color name="NavigationDrawarBackground">#252525</color>
+    <color name="ButtonGray">#353535</color>
+    <color name="MediumGrey">#505050</color>
+    <color name="LightGray">#A9A9A9</color>
+    <color name="ExtraLightGray">#DCDCDC</color>
+</resources>
