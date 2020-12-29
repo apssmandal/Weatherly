@@ -581,16 +581,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
     }
-
-   /* public interface LocationListener {
-        void onLocationChanged(Location var1);
-
-        void onStatusChanged(String var1, int var2, Bundle var3);
-
-        void onProviderEnabled(String var1);
-
-        void onProviderDisabled(String var1);
-    }*/
+    
 
     private void makeVisible() {
 
