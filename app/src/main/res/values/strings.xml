@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Weatherly</string>
-    <string name="api_key">cf7278572a17c744221a0dd89c3b2ac3</string>
+    <string name="api_key">*Your_api_key*</string>
 </resources>
