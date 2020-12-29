@@ -143,26 +143,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         dbCurrentCountry = findViewById(R.id.db_current_place_country);
         dbCurrentPlace = findViewById(R.id.db_current_loc_name);
         dbCurrentPlaceLayout = findViewById(R.id.db_current_loc);
-
         mLocSearchBtn = findViewById(R.id.loc_search_btn);
         mLocSearchText = findViewById(R.id.search_loc_place);
         mSearchAnimation = findViewById(R.id.loc_search_animation);
         mHintText = findViewById(R.id.loc_search_hint);
-
         mSearchList = findViewById(R.id.loc_search_recyclerview);
+
         mSearchList.setHasFixedSize(true);
         mSearchList.setLayoutManager(new LinearLayoutManager(this));
 
         mNotFoundLayout.setVisibility(View.INVISIBLE);
 
-
-
         mNavigationView.bringToFront();
         mNavigationView.setNavigationItemSelectedListener(this);
-
-
-
-
 
         mLocSearchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -213,7 +206,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mSearchButton.bindTargetView(mLocationAddLayout);
 
-
         mSearchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -229,7 +221,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 LatLongList.clear();
             }
         });
-
 
         mLocationIcon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -273,8 +264,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(MainActivity.this,"Location "+(position+1)+" of "+cityAdapter.getItemCount(),Toast.LENGTH_SHORT).show();
             }
         }));
-
-
 
         /*-------------------Fused Location----------------------------*/
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
@@ -387,16 +376,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                     int time = Integer.parseInt(ct);
 
-                    Calendar calendar = GregorianCalendar.getInstance();
-
-
                     double windspeed = (wind/1000)*3600;
 
                     Locale l = new Locale("", country);
 
                     String upperCaseCondition = condition.substring(0, 1).toUpperCase() + condition.substring(1).toLowerCase();
-
-                    //Toast.makeText(MainActivity.this,String.valueOf(id),Toast.LENGTH_LONG).show();
 
                     if (!CityName.equals("azbycx")){
                         loc = CityName;
@@ -581,7 +565,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
     }
-    
+
 
     private void makeVisible() {
 
@@ -764,9 +748,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     cityAdapter = new CityAdapter(listItems,getApplicationContext());
 
                     mSearchList.setAdapter(cityAdapter);
-
-
-
 
 
                 }catch(Exception a) {
